@@ -2,7 +2,7 @@ class Song < ActiveRecord::Base
   belongs_to :artist
   has_many :song_genres
 
-  def slug 
+  def slug
     name.downcase.gsub(" ","-")
   end
 
